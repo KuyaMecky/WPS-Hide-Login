@@ -2,7 +2,7 @@
 /*
 Plugin Name: WPS Hide Login
 Description: Protect your website by changing the login URL and preventing access to wp-login.php page and wp-admin directory while not logged-in
-Donate link: https://www.paypal.me/KuyaMecky
+Donate link: https://paypal.me/meckylogs?country.x=PH&locale.x=en_US
 Author: WPServeur, Mecky, wpformation
 Author URI: https://wpserveur.net
 Version: 1.9.17.1

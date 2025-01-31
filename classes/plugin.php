@@ -865,7 +865,7 @@ class Plugin {
 					array(
 						'type'        => 'warning',
 						'dismissible' => true,
-						'attributes'  => array( 'data-slug' => 'wps-hide-login' )
+		 				'attributes'  => array( 'data-slug' => 'wps-hide-login' )
 					)
 				);
 			else :*/ ?>
