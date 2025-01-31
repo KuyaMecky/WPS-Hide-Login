@@ -14,8 +14,6 @@ Change wp-login.php to anything you want.
 
 ## Description
 
-### English
-
 **WPS Hide Login** is a very light plugin that lets you easily and safely change the URL of the login form page to anything you want. It doesn’t literally rename or change files in core, nor does it add rewrite rules. It simply intercepts page requests and works on any WordPress website. The wp-admin directory and wp-login.php page become inaccessible, so you should bookmark or remember the URL. Deactivating this plugin brings your site back exactly to the state it was before.
 
 This plugin is kindly proposed by [WPServeur](https://www.wpserveur.net/?refwps=14&campaign=wpshidelogin) the specialized WordPress web host.
@@ -27,24 +25,7 @@ Discover also our other free extensions:
 
 This plugin is only maintained, which means we do not guarantee free support. Consider reporting a problem and be patient.
 
-### Français
-
-**WPS Hide Login** est un plugin très léger qui vous permet de changer facilement et en toute sécurité l'URL de la page de formulaire de connexion. Il ne renomme pas littéralement ou ne modifie pas les fichiers dans le noyau, ni n'ajoute des règles de réécriture. Il intercepte simplement les demandes de pages et fonctionne sur n'importe quel site WordPress. Le répertoire wp-admin et la page wp-login.php deviennent inaccessibles, vous devez donc ajouter un signet ou vous souvenir de l'URL. Désactiver ce plugin ramène votre site exactement à l'état dans lequel il était auparavant.
-
-Ce plugin vous est gentiment proposé par [WPServeur](https://www.wpserveur.net/?refwps=14&campaign=wpshidelogin) l'hébergeur spécialisé WordPress.
-
-Plus d'infos sur son utilisation : [https://wpformation.com/wps-hide-login-url-connexion-wordpress/](https://wpformation.com/wps-hide-login-url-connexion-wordpress/)
-
-Découvrez également nos autres extensions gratuites :
-- [WPS Limit Login](https://fr.wordpress.org/plugins/wps-limit-login/) pour bloquer les attaques par force brute.
-- [WPS Bidouille](https://fr.wordpress.org/plugins/wps-bidouille/) pour optimiser votre WordPress et faire le plein d'infos.
-- [WPS Cleaner](https://fr.wordpress.org/plugins/wps-cleaner/) pour nettoyer votre site WordPress.
-
-Ce plugin est seulement maintenu, ce qui signifie que nous ne garantissons pas un support gratuit. Envisagez de signaler un problème et soyez patient.
-
 ## Compatibility
-
-### English
 
 Requires WordPress 4.1 or higher. All login related things such as the registration form, lost password form, login widget and expired sessions just keep working.
 
@@ -62,41 +43,13 @@ Works with multisite, with subdomains and subfolders. Activating it for a networ
 
 If you’re using a **page caching plugin** other than WP Rocket, you should add the slug of the new login URL to the list of pages not to cache. WP Rocket is already fully compatible with the plugin.
 
-### Français
-
-Nécessite WordPress 4.1 ou supérieur. Toutes les choses liées à la connexion telles que le formulaire d'inscription, le formulaire de mot de passe perdu, le widget de connexion et les sessions expirées continuent de fonctionner.
-
-Il est également compatible avec tout plugin qui se connecte au formulaire de connexion, notamment:
-
-- BuddyPress
-- bbPress
-- Jetpack
-- WPS Limit Login
-- User Switching
-
-Évidemment, cela ne fonctionne pas avec les plugins ou les thèmes *hardcoded* wp-login.php.
-
-Fonctionne en multisite, avec sous-domaines ou sous-dossiers. L'activer pour un réseau vous permet de définir une valeur par défaut pour l'ensemble du réseau. Les sites individuels peuvent toujours renommer leur page de connexion pour autre chose.
-
-Si vous utilisez un **plugin de mise en cache de pages** autre que WP Rocket, vous devez ajouter le slug de la nouvelle URL de connexion à la liste des pages à ne pas mettre en cache. WP Rocket est déjà entièrement compatible avec le plugin.
-
 ## Installation
-
-### English
 
 1. Go to Plugins › Add New.
 2. Search for *WPS Hide Login*.
 3. Look for this plugin, download and activate it.
 4. The page will redirect you to the settings. Change your login URL there.
 5. You can change this option any time you want, just go back to Settings › WPS Hide Login.
-
-### Français
-
-1. Aller dans Extensions › Ajouter.
-2. Rechercher *WPS Hide Login*.
-3. Recherchez ce plugin, téléchargez-le et activez-le.
-4. La page vous redirigera vers les paramètres. Changez votre URL de connexion.
-5. Vous pouvez changer cette option quand vous le souhaitez, il vous suffit de retourner dans Paramètres > WPS Hide Login.
 
 ## Screenshots
 
@@ -121,23 +74,6 @@ But there is no redirection via the plugin, the default URL of WordPress (/wp-lo
 This case can come from plugins modifying your .htaccess files to add or change rules, or from an old WordPress MU configuration not updated since Multisite was added.
 
 First step is to check your .htaccess file and compare it to a regular one, to see if the problem comes from it.
-
-### J'ai oublié mon identifiant de connexion !
-
-Allez dans votre base de données MySQL et recherchez la valeur de 'whl_page' dans la table des options, ou supprimez le dossier 'wps-hide-login' de votre dossier 'plugins', connectez-vous via wp-login.php et réinstallez le plugin.
-
-Sur une installation multisite, l'option 'whl_page' sera dans la table de sitemeta, si l'option n'existe pas dans la table des options.
-
-### URL d'inscription et de mot de passe oublié
-
-Il vous faut donner l'URL. Exemple : /login?action=register ou /login?action=lostpassword
-Mais il n'y pas de redirection via le plugin, de l'URL par défaut de WordPress (/wp-login.php?action=register ou /wp-login.php?action=lostpassword) sinon tout le monde pourrait connaître l'URL d'administration de votre site.
-
-### Je suis bloqué !
-
-Ce cas peut provenir de plugins modifiant vos fichiers .htaccess pour ajouter ou modifier des règles, ou d'une ancienne configuration de WordPress MU non mise à jour depuis l'ajout de Multisite.
-
-La première étape consiste à vérifier votre fichier .htaccess et à le comparer à un fichier .htaccess normal, pour voir si le problème provient de ce fichier.
 
 ## Changelog
 
@@ -415,5 +351,32 @@ La première étape consiste à vérifier votre fichier .htaccess et à le compa
 ### 1.0
 
 - Initial version. This is a fork of the Rename wp-login.php plugin, which is unmaintained [https://wordpress.org/plugins/rename-wp-login/](https://wordpress.org/plugins/rename-wp-login/). All previous changelogs can be found there.
-#   W P S - H i d e - L o g i n  
- 
+
+## Contributing
+
+We welcome contributions to improve this plugin. Here are some ways you can contribute:
+
+1. **Report Bugs**: If you find a bug, please report it by creating an issue.
+2. **Suggest Features**: If you have an idea for a new feature, please open an issue to discuss it.
+3. **Submit Pull Requests**: If you have a fix or a new feature, feel free to submit a pull request.
+
+## License
+
+This project is licensed under the GPLv2 or later License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- Thanks to all the contributors who have helped improve this plugin.
+- Special thanks to [WPServeur](https://www.wpserveur.net/?refwps=14&campaign=wpshidelogin) for their support.
+
+## Support
+
+This plugin is maintained, but free support is not guaranteed. If you encounter issues, consider reporting them and be patient.
+
+## Links
+
+- [Plugin on WordPress.org](https://wordpress.org/plugins/wps-hide-login/)
+- [Donate](https://www.paypal.me/KuyaMecky)
+- [WPServeur](https://www.wpserveur.net/?refwps=14&campaign=wpshidelogin)
+- [WPFormation](https://wpformation.com/wps-hide-login-url-connexion-wordpress/)
+- [GitHub Repository](https://github.com/your-repo/WPS-Hide-Login)
