@@ -1,7 +1,7 @@
 # WPS Hide Login
 
 **Contributors:** WPServeur, Mecky, wpformation  
-**Donate link:** [https://www.paypal.me/KuyaMecky](https://www.paypal.me/KuyaMecky)  
+**Donate link:** [https://paypal.me/meckylogs?country.x=PH&locale.x=en_US](https://www.paypal.me/KuyaMecky)  
 **Tags:** rename, login, wp-login, wp-login.php, custom login url  
 **Requires at least:** 4.1  
 **Tested up to:** 6.6  
